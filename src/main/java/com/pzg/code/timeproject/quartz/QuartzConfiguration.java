@@ -12,6 +12,8 @@ import org.springframework.scheduling.quartz.SimpleTriggerFactoryBean;
 
 @Configuration
 public class QuartzConfiguration {
+
+
     @Bean(name = "firstJobDetail")
     public MethodInvokingJobDetailFactoryBean firstJobDetail(ScheduleTask task) {
         // ScheduleTask为需要执行的任务
