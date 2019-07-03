@@ -30,7 +30,8 @@ public class TimeConreoller {
     public ResultInfo doByTimeTest() {
         ResultInfo tasksByUser = null;
         try {
-            Integer integer = timeService.useCount();
+            ResultInfo resultInfo = timeService.doByTimeTest();
+            return resultInfo;
         } catch (Exception e) {
             e.printStackTrace();
         }
