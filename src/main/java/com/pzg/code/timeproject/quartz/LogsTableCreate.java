@@ -29,7 +29,7 @@ public class LogsTableCreate {
             LogUtils.createLogTable(jdbcTemplate);
         } catch (Exception e) {
             e.printStackTrace();
-            LOGGER.error("日志表创建异常");
+            LOGGER.error("表创建异常");
         }
     }
 
